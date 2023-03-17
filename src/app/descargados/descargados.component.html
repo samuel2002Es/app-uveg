@@ -1,0 +1,9 @@
+<!-- <app-data></app-data> -->
+{{getInfo()}}
+<div class="container">
+  <app-tarjetas [tarjetas]="datosService.tarjeta1"></app-tarjetas>
+  <app-tarjetas [tarjetas]="datosService.tarjeta2"></app-tarjetas>
+  <!-- <app-tarjetas *ngFor="let i of datosDescarga;" [tarjetas]="datosDescarga" ></app-tarjetas> -->
+</div>
+<!-- <app-tarjetas [tarjetas]="datosService.tarjeta2"></app-tarjetas> -->
+<p>descargados works!</p>

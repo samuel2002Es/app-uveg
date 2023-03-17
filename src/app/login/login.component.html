@@ -1,0 +1,14 @@
+<div>
+  <form class="form">
+    <h1>{{title}}</h1>
+    <input type="text" name="email" placeholder="Email" [(ngModel)]="gmail"><br>
+    <input type="password" name="contraseña" placeholder="Contraseña" [(ngModel)]="contrasena" ><br>
+    <input type="submit" name="Registrar"(click)="ingresarUsuario()" value="Login">
+    <input class="signup" type="submit" name="Registrar"(click)="registrarUsuario()" value="SignUp">
+  </form>
+
+  <p *ngIf="sesion; else sinRegistrar">{{mensaje}} {{gmail}} {{contrasena}}</p>
+  <ng-template #sinRegistrar>
+    nadie Registrado
+  </ng-template>
+</div>

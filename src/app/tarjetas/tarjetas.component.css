@@ -1,0 +1,37 @@
+.tarjetas{
+  display: flex;
+}
+.container{
+  width: 15rem;
+  height: 25rem;
+  border-radius: 10px 10px 10px 10px;
+  border: 2px black solid;
+  background-image: linear-gradient(to right top, #cf466a, #c04e84, #ab5a98, #9165a4, #776da7, #6a6aab, #5969af, #4167b3, #2d5cbf, #1b4fc8, #1840cf, #292ad3);;
+  display: flexbox;
+  text-align: center;
+
+}
+.container .title{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+.container img{
+  margin-top: 5px;
+  width: 100%;
+  height: 170px;
+}
+.rating{
+  display:flex ;
+}
+.container .info{
+  margin-top: 5px;
+  display: flex;
+}
+.info .lanzamiento{
+  font-size: 16px;
+}
+.description{
+  margin: 12px;
+  text-align: start;
+  font-size: 12px;
+}

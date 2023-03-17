@@ -1,0 +1,14 @@
+<h1>Registrar videojuego</h1>
+<form (ngSubmit)="formularioEnviado()">
+	<input type="text" name="title" placeholder="Nombre de mascota" [(ngModel)]="videojuego.nombre">
+	<br><br>
+	<input type="number" name="clasification" placeholder="clasification"[(ngModel)]="videojuego.clasification">
+	<br><br>
+  <input type="text" name="description" placeholder="description" [(ngModel)]="videojuego.description">
+	<br><br>
+  <input type="text" name="lanzamiento" placeholder="lanzamiento" [(ngModel)]="videojuego.lanzamiento">
+	<br><br>
+	<input type="number" name="downloads" placeholder="descargas" [(ngModel)]="videojuego.downloads">
+	<br><br>
+	<button type="submit">Guardar</button>
+</form>

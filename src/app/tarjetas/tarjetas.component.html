@@ -1,0 +1,13 @@
+{{getInfo()}}
+<div class="container">
+  <div class="container">
+  <!-- <span class="title">titulo: {{titulo}}</span> -->
+  <span class="title"*ngFor="let tarjeta of tarjetas">{{tarjeta.title}}</span>
+  <img src="" alt="">
+  <div class="info">
+      <span class="lanzamiento" *ngFor="let tarjeta of tarjetas">Fecha de lanzamiento {{tarjeta.releaseDate}}</span>
+      <span class="rating" *ngFor="let tarjeta of tarjetas">⭐{{tarjeta.rating}}</span>
+  </div>
+  <p class="description" *ngFor="let tarjeta of tarjetas">Descripcion: {{tarjeta.description}}</p>
+  <p class="downloads" *ngFor="let tarjeta of tarjetas">Descargados: {{tarjeta.downloads}}</p>
+</div>
